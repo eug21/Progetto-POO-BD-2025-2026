@@ -75,38 +75,7 @@ public class ListaVeicolo extends JFrame {
                 riempiTabella(lista, colonne);
             }
         });
-        eliminaSelezionatoButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int riga = tabellaVeicoli.getSelectedRow();
-                if(riga == -1){
-                    JOptionPane.showMessageDialog(null, "Veicolo non valido", "Errore", JOptionPane.ERROR_MESSAGE);
-                    return;
-                }
 
-                String targa  = (String) tabellaVeicoli.getValueAt(riga, 0);
-
-                int conferma = JOptionPane.showConfirmDialog(null, "Sei sicuro di volere eliminare questo veicolo? ", "Conferma", JOptionPane.YES_NO_OPTION);
-                if(conferma != JOptionPane.YES_OPTION){
-                    return;
-                }
-                try{
-                    ListaVeicolo.this.controller.eliminaVeicolo(targa);
-                    JOptionPane.showMessageDialog(null, "Veicolo eliminato! ", "Successo", JOptionPane.INFORMATION_MESSAGE);
-                    tuttiButton.doClick();
-                } catch (VeicoloNonTrovatoException eccezione) {
-                    JOptionPane.showMessageDialog(null, "Veicolo non trovato", eccezione.getMessage(), JOptionPane.ERROR_MESSAGE);
-
-                } catch (VeicoloNonDisponibileException eccezione){
-                    JOptionPane.showMessageDialog(null, "Veicolo non disponobile", eccezione.getMessage(), JOptionPane.ERROR_MESSAGE);
-                }
-                catch (Exception eccezione) {
-                JOptionPane.showMessageDialog(null, "ERRORE", "Errore di sistema", JOptionPane.ERROR_MESSAGE);
-    
-                }
-            }
-        });
-        tuttiButton.doClick();
     }
     private void riempiTabella (List <Veicolo> lista, String [] colonne){
         DefaultTableModel modello = new DefaultTableModel(null, colonne);

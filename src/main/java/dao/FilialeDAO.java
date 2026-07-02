@@ -8,7 +8,6 @@ public interface FilialeDAO {
 
     void save(Filiale filiale);
     Filiale trovaPerCodice(String codiceFiliale);
-    void delete (String codicFiliale);
     void update (Filiale filiale);
     List <Filiale> getAll();
 

@@ -7,7 +7,6 @@ import java.util.List;
 public interface ClienteDAO {
     void save(Cliente cliente);
     Cliente trovaPerPatente (String numeroPatente) ;
-    boolean delete(String numeroPatente) ;
     List <Cliente> findAll() ;
     boolean rinnovoPatente (String patenteVecchia, String patenteNuova);
 }

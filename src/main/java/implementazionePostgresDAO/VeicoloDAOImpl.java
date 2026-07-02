@@ -98,20 +98,6 @@ public class VeicoloDAOImpl implements VeicoloDAO {
 
     }
 
-    @Override
-    public void delete(String targa)  {
-        String sql = "DELETE FROM Veicolo WHERE targa = ? ";
-
-        try(PreparedStatement statement = connection.prepareStatement(sql)){
-            statement.setString(1, targa);
-            statement.executeUpdate();
-        }
-        catch (SQLException ex){
-            ex.printStackTrace();
-            throw new RuntimeException("Impossibile eliminare il veicolo.", ex);
-        }
-
-    }
 
     @Override
     public List<Veicolo> cercaStato(StatoVeicolo stato) {

@@ -59,19 +59,7 @@ public class ClienteDAOImpl implements ClienteDAO {
         return null;
     }
 
-    @Override
-    public boolean delete(String numeroPatente){
-        String sql = "DELETE FROM Cliente WHERE numeroPatente= ? ";
-        try(PreparedStatement statement = connection.prepareStatement(sql)){
-            statement.setString(1, numeroPatente);
-            statement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException("Impossibile eliminare il cliente",e);
-        }
 
-        return false;
-    }
 
     @Override
     public List<Cliente> findAll(){

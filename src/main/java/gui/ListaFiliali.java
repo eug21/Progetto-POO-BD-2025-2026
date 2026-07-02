@@ -47,34 +47,6 @@ public class ListaFiliali extends  JFrame{
             }
         });
 
-        eliminaSelezionataButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int rigaSelezionata = filialiTable.getSelectedRow();
-                if(rigaSelezionata == -1){
-                    JOptionPane.showMessageDialog(null, "Seleziona una riga da eliminare", "Attenzione" ,JOptionPane.WARNING_MESSAGE);
-                    return;
-                }
 
-                String codice  = (String) filialiTable.getValueAt(rigaSelezionata, 0);
-                int conferma  = JOptionPane.showConfirmDialog(null, "Sei sicuro di volere eliminare questa filiale: " + codice + "?", "Eliminazione", JOptionPane.YES_NO_OPTION);
-
-                if(conferma != JOptionPane.YES_OPTION){
-                    return;
-                }
-                try {
-                    controller.eliminaFiliale(codice);
-                    JOptionPane.showMessageDialog(null, "Filiale eliminata con successo! ");
-                    aggiornaListaButton.doClick();
-                } catch (FilialeNonTrovataException eccezione){
-                    JOptionPane.showMessageDialog(null, eccezione.getMessage(), "Errore la filiale non esiste", JOptionPane.ERROR_MESSAGE);
-                }  catch (Exception eccezione) {
-                    JOptionPane.showMessageDialog(null, "ERRORE", "Errore di sistema", JOptionPane.ERROR_MESSAGE);
-    
-                }
-
-            }
-        });
-        aggiornaListaButton.doClick();
     }
 }

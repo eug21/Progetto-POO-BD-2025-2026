@@ -10,6 +10,5 @@ public interface VeicoloDAO {
     void save(Veicolo veicolo);
     Veicolo trovaPerTarga (String targa);
     void update (Veicolo veicolo);
-    void delete (String targa);
     List <Veicolo> cercaStato (StatoVeicolo stato);
 }

@@ -61,19 +61,7 @@ public class FilialeDAOImpl implements FilialeDAO {
         return null;
     }
 
-    @Override
-    public void delete(String codiceFiliale)  {
-        String sql = "DELETE FROM Filiale WHERE codiceFiliale = ? ";
-        try(PreparedStatement statement = connection.prepareStatement(sql)){
-            statement.setString(1, codiceFiliale);
-            statement.executeUpdate();
-        }
-        catch(SQLException ex){
-            ex.printStackTrace();
-            throw new RuntimeException("Impossibile eliminare la filiale.", ex);
-        }
 
-    }
 
     @Override
     public void update(Filiale filiale) {

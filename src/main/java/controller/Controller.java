@@ -103,22 +103,7 @@ public class Controller {
 
     }
 
-    /**
-     * Elimina un cliente dal sistema .
-     *
-     * @param numPatente numero patente
-     * @return  boolean
-     * @throws ClienteNonTrovatoException eccezione lanciata se il numero patente non trova nessuna corrispondenza, ciò vuol dire che banalamente il cliente non esiste.
-     */
-//elimina un cliente dal db
-    public boolean eliminaCliente(String numPatente) throws ClienteNonTrovatoException{
-        Cliente cliente = ricercaPerPatente(numPatente);
-        if(cliente == null){
-            throw new ClienteNonTrovatoException("Il cliente non esiste"+ numPatente);
-        }
 
-        return clienteDAO.delete(numPatente);
-    }
 
     /**
      * Lista di tutti i clienti registrati nel sistema
@@ -228,26 +213,7 @@ public class Controller {
         return true;
     }
 
-    /**
-     * Elimina un veicolo dal sistema cercandolo prima mediante numero di targa
-     *
-     * @param targa  targa
-     * @return  boolean
-     * @throws VeicoloNonTrovatoException     eccezione lanciata se non viene trovata alcuna corrispondenza con la targa inserita, ciò significa che il veicolo non esiste.
-     * @throws VeicoloNonDisponibileException eccezione lanciata se il veicolo trovato risulta essere in manutenzione oppure noleggiato.
-     */
-    public boolean eliminaVeicolo(String targa) throws VeicoloNonTrovatoException, VeicoloNonDisponibileException {
-        Veicolo veicolo = cercaTarga(targa);
 
-        if (veicolo == null) {
-            throw new VeicoloNonTrovatoException("Il veicolo non esiste " + targa);
-        }
-        if (!veicolo.verificaDisponibile()) {
-            throw new VeicoloNonDisponibileException("Il veicolo non e' disponibile " + targa);
-        }
-        veicoloDAO.delete(targa);
-        return true;
-    }
 
     /**
      * Restituisce una lista dei veicoli disponibili.
@@ -317,22 +283,6 @@ public class Controller {
         return filialeDAO.trovaPerCodice(codiceFiliale);
     }
 
-    /**
-     * Elimina una filiale dal sistema cercandola preventivamente mediante il suo codice filiale.
-     *
-     * @param codiceFiliale  codice filiale
-     * @return  boolean
-     * @throws FilialeNonTrovataException eccezione lanciata se non vi è alcuna corrispondenza tra il codice filiale fornito e il sistema, ciò vuol dire che tale filiale non esiste.
-     */
-//eliminazione di una filiale dal db
-    public boolean eliminaFiliale(String codiceFiliale) throws FilialeNonTrovataException{
-        Filiale filiale = cercaConIdFiliale(codiceFiliale);
-        if (filiale == null) {
-            throw new FilialeNonTrovataException("La filiale non esiste. ");
-        }
-        filialeDAO.delete(codiceFiliale);
-        return true;
-    }
 
     /**
      * Modifica i dati di una filiale nel sistema.
@@ -660,6 +610,11 @@ public class Controller {
         }
     }
 
+    /**
+     * Ricava il codice filiale del responsabile sfruttando il database
+     * @param idResponsabile idResponsabile
+     * @return codiceFiliale
+     */
     //ricava il codice filiale del responsabile mediante il dao
     public String filialeResponsabile (String idResponsabile){
         return responsabileDAO.ottieniFiliale(idResponsabile);
