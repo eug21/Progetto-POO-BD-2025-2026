@@ -11,10 +11,16 @@ import java.util.List;
 import java.util.ArrayList;
 import java.sql.Date;
 
+/**
+ * The type Riparazione dao.
+ */
 public class RiparazioneDAOImpl implements RiparazioneDAO {
 
     private Connection connection;
 
+    /**
+     * Instantiates a new Riparazione dao.
+     */
     public RiparazioneDAOImpl() {
         try {
             connection = ConnessioneDatabase.getInstance().connection;

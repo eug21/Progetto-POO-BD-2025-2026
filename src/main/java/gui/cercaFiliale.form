@@ -28,7 +28,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoCodice"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="f3c9f" class="javax.swing.JButton" binding="cercaButton" default-binding="true">
@@ -54,7 +54,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoVia"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="6ebf0" class="javax.swing.JLabel">
@@ -72,7 +72,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoCitta"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="49d3e" class="javax.swing.JLabel">
@@ -90,7 +90,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoCAP"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="ab150" class="javax.swing.JLabel">
@@ -108,7 +108,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoTelefono"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="f8e0b" class="javax.swing.JButton" binding="salvaModificheButton" default-binding="true">

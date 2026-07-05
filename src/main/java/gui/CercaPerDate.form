@@ -36,7 +36,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="fine"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="41312" class="javax.swing.JButton" binding="chiudi">
@@ -70,7 +70,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="inizio"/>
+          <text value=""/>
         </properties>
       </component>
     </children>

@@ -13,9 +13,16 @@ import java.util.List;
 import java.util.ArrayList;
 
 
+/**
+ * The type Cliente dao.
+ */
 public class ClienteDAOImpl implements ClienteDAO {
 
     private Connection connection;
+
+    /**
+     * Instantiates a new Cliente dao.
+     */
     public ClienteDAOImpl(){
         try{
             connection = ConnessioneDatabase.getInstance().connection;

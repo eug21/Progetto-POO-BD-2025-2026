@@ -28,7 +28,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoFiliale"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="43e5e" class="javax.swing.JLabel">
@@ -46,7 +46,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoId"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="998f6" class="javax.swing.JButton" binding="assegnaButton" default-binding="true">

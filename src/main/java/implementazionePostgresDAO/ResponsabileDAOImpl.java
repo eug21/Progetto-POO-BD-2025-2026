@@ -9,10 +9,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * The type Responsabile dao.
+ */
 public class ResponsabileDAOImpl implements ResponsabileDAO{
 
     private Connection connection;
 
+    /**
+     * Instantiates a new Responsabile dao.
+     */
     public ResponsabileDAOImpl(){
         try {
             connection = ConnessioneDatabase.getInstance().connection;

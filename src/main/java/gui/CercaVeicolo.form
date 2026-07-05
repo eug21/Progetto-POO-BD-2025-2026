@@ -60,7 +60,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoTarga"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="ca0fb" class="javax.swing.JTextField" binding="testoMarcaTextField" default-binding="true">
@@ -70,7 +70,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoMarca"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="cffa6" class="javax.swing.JTextField" binding="testoModelloTextField" default-binding="true">
@@ -80,7 +80,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoModello"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="6e54c" class="javax.swing.JTextField" binding="testoTariffaTextField" default-binding="true">
@@ -90,7 +90,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoTariffa"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="e5280" class="javax.swing.JComboBox" binding="comboStato">

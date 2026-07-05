@@ -44,7 +44,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="id"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="cb0b1" class="javax.swing.JTextField" binding="nomeTextField" default-binding="true">
@@ -54,7 +54,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="nome"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="fc2cb" class="javax.swing.JTextField" binding="cognomeTextField" default-binding="true">
@@ -64,7 +64,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="cognome"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="f7df0" class="javax.swing.JButton" binding="cercaButton" default-binding="true">

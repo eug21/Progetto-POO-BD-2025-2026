@@ -30,7 +30,9 @@
         <children>
           <component id="bf534" class="javax.swing.JTable" binding="tab">
             <constraints/>
-            <properties/>
+            <properties>
+              <enabled value="true"/>
+            </properties>
           </component>
         </children>
       </scrollpane>

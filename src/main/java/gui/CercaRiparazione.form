@@ -60,7 +60,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="data"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="15f67" class="javax.swing.JTextField" binding="finaleTextField" default-binding="true">
@@ -70,7 +70,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="finale"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="dc74" class="javax.swing.JTextField" binding="stimaTextField" default-binding="true">
@@ -80,7 +80,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="stima"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="60ca3" class="javax.swing.JTextField" binding="problemaTextField" default-binding="true">
@@ -90,7 +90,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="problema"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="30f85" class="javax.swing.JTextField" binding="targaTextField" default-binding="true">
@@ -100,7 +100,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="targa"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="709db" class="javax.swing.JButton" binding="cercaButton" default-binding="true">

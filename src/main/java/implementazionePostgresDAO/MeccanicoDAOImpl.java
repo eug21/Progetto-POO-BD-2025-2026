@@ -11,10 +11,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * The type Meccanico dao.
+ */
 public class MeccanicoDAOImpl implements MeccanicoDAO{
 
     private Connection connection;
 
+    /**
+     * Instantiates a new Meccanico dao.
+     */
     public MeccanicoDAOImpl(){
         try {
             connection = ConnessioneDatabase.getInstance().connection;

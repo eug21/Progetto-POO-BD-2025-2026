@@ -60,7 +60,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoid"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="801a2" class="javax.swing.JTextField" binding="testoNomeTextField" default-binding="true">
@@ -70,7 +70,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoNome"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="4eec0" class="javax.swing.JTextField" binding="testoCognomeTextField" default-binding="true">
@@ -80,7 +80,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoCognome"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="446ff" class="javax.swing.JTextField" binding="testoMailTextField" default-binding="true">
@@ -90,7 +90,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoMail"/>
+          <text value=""/>
         </properties>
       </component>
     </children>

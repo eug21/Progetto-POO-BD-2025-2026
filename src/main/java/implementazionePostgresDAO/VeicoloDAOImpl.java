@@ -10,10 +10,16 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Veicolo dao.
+ */
 public class VeicoloDAOImpl implements VeicoloDAO {
 
     private Connection connection;
 
+    /**
+     * Instantiates a new Veicolo dao.
+     */
     public VeicoloDAOImpl(){
         try{
             connection = ConnessioneDatabase.getInstance().connection;

@@ -28,7 +28,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoPatente"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="b35b5" class="javax.swing.JLabel">
@@ -46,7 +46,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="testoTarga"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="5401a" class="javax.swing.JLabel">
@@ -64,7 +64,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="ritiro"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="5e8c3" class="javax.swing.JLabel">
@@ -82,7 +82,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="consegna"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="22d2b" class="javax.swing.JLabel">
@@ -100,7 +100,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="inizio"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="28976" class="javax.swing.JLabel">
@@ -118,7 +118,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="fine"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="e91bb" class="javax.swing.JButton" binding="calcolaPrezzoButton" default-binding="true">

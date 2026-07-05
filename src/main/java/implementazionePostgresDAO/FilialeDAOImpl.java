@@ -12,10 +12,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * The type Filiale dao.
+ */
 public class FilialeDAOImpl implements FilialeDAO {
 
     private Connection connection;
 
+    /**
+     * Instantiates a new Filiale dao.
+     */
     public FilialeDAOImpl(){
         try{
             connection = ConnessioneDatabase.getInstance().connection;

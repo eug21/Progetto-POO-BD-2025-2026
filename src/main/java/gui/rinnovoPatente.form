@@ -29,7 +29,7 @@
         </constraints>
         <properties>
           <editable value="false"/>
-          <text value="patenteAttuale"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="5043a" class="javax.swing.JLabel">
@@ -47,7 +47,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="nuovaPatente"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="61917" class="javax.swing.JButton" binding="confermaButton" default-binding="true">

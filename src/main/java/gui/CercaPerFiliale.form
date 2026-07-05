@@ -23,7 +23,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="codiceFiliale"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="bfb1" class="javax.swing.JButton" binding="cercaButton" default-binding="true">

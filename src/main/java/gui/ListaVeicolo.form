@@ -49,7 +49,9 @@
         <children>
           <component id="2e663" class="javax.swing.JTable" binding="tabellaVeicoli">
             <constraints/>
-            <properties/>
+            <properties>
+              <enabled value="true"/>
+            </properties>
           </component>
         </children>
       </scrollpane>

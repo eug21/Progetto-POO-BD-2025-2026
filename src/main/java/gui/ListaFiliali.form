@@ -25,7 +25,9 @@
         <children>
           <component id="9c5b7" class="javax.swing.JTable" binding="filialiTable">
             <constraints/>
-            <properties/>
+            <properties>
+              <enabled value="true"/>
+            </properties>
           </component>
         </children>
       </scrollpane>

@@ -52,7 +52,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="mail"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="f24ca" class="javax.swing.JTextField" binding="idTextField" default-binding="true">
@@ -62,7 +62,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="id"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="54563" class="javax.swing.JTextField" binding="nomeTextField" default-binding="true">
@@ -72,7 +72,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="nome"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="ec48f" class="javax.swing.JTextField" binding="cognomeTextField" default-binding="true">
@@ -82,7 +82,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="cognome"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="63de4" class="javax.swing.JButton" binding="cercaButton" default-binding="true">
@@ -116,7 +116,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="filiale"/>
+          <text value=""/>
         </properties>
       </component>
     </children>

@@ -23,7 +23,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="numeroPatente"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="e461f" class="javax.swing.JButton" binding="cercaButton" default-binding="true">
@@ -43,7 +43,9 @@
         <children>
           <component id="7912a" class="javax.swing.JTable" binding="tabContratti">
             <constraints/>
-            <properties/>
+            <properties>
+              <enabled value="true"/>
+            </properties>
           </component>
         </children>
       </scrollpane>

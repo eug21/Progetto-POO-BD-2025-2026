@@ -11,10 +11,16 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Contratto dao.
+ */
 public class ContrattoDAOImpl implements ContrattoDAO {
 
     private Connection connection;
 
+    /**
+     * Instantiates a new Contratto dao.
+     */
     public ContrattoDAOImpl(){
         try{
             connection = ConnessioneDatabase.getInstance().connection;
