@@ -11,6 +11,10 @@ import controller.Controller ;
 import exception.FilialeNonTrovataException;
 import model.Filiale;
 
+/**
+ * The type Lista filiali.
+ * Schermata che visualizza la lista delle filiali presenti nel sistema.
+ */
 public class ListaFiliali extends  JFrame{
     private JPanel listaFiliali;
     private JButton aggiornaListaButton;
@@ -19,6 +23,11 @@ public class ListaFiliali extends  JFrame{
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Lista filiali.
+     *
+     * @param controllerHome the controller home
+     */
     public ListaFiliali(Controller controllerHome) {
         this.controller = controllerHome;
         setTitle("Lista filiali");

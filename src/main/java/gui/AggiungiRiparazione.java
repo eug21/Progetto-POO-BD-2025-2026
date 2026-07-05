@@ -15,6 +15,10 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
+/**
+ * The type Aggiungi riparazione.
+ * Schermata che consente di aggiungere una riparazione nel sistema.
+ */
 public class AggiungiRiparazione extends JFrame {
     private JPanel aggiungi;
     private JTextField targaTextField;
@@ -27,6 +31,11 @@ public class AggiungiRiparazione extends JFrame {
     private Controller controller; 
     private final DateTimeFormatter formatoDataItalia = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+    /**
+     * Instantiates a new Aggiungi riparazione.
+     *
+     * @param controllerHome the controller home
+     */
     public AggiungiRiparazione(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Aggiungi una riparazione");

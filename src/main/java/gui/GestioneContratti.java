@@ -6,6 +6,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Gestione contratti.
+ * Schermata che consente di gestire le operazioni relative ai contratti: aggiunta, ricerca per date, ricerca per cliente, ricerca per filiale.
+ */
 public class GestioneContratti extends JFrame{
     private JPanel gestioneContratti;
     private JButton nuovoContrattoButton;
@@ -13,8 +17,13 @@ public class GestioneContratti extends JFrame{
     private JButton cercaPerClienteButton;
     private JButton cercaPerFilialeButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Gestione contratti.
+     *
+     * @param controllerHome the controller home
+     */
     public GestioneContratti(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Gestione Contratti");

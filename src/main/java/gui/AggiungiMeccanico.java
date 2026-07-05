@@ -8,6 +8,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Aggiungi meccanico.
+ * Schermata che consente di aggiungere un meccanico nel sistema.
+ */
 public class AggiungiMeccanico extends JFrame {
     private JPanel aggiungi;
     private JTextField idTextField;
@@ -15,8 +19,13 @@ public class AggiungiMeccanico extends JFrame {
     private JTextField cognomeTextField;
     private JButton aggiungiButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Aggiungi meccanico.
+     *
+     * @param controllerHome the controller home
+     */
     public AggiungiMeccanico(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Aggiungi un meccanico");

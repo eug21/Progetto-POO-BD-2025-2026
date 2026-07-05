@@ -8,6 +8,11 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Cerca res.
+ * Schermata che consente di cercare un responsabile mediante il suo codice identificativo univoco e di eventualmente
+ * modificarne la mail.
+ */
 public class CercaRes extends JFrame {
     private JPanel cercaRes;
     private JTextField mailTextField;
@@ -18,8 +23,13 @@ public class CercaRes extends JFrame {
     private JButton modificaEmailButton;
     private JTextField filialeTextField;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Cerca res.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaRes(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Cerca un responsabile");

@@ -7,6 +7,10 @@ import model.TipoPatente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Gestione clienti.
+ * Schermata che consente di gestire le diverse operazioni relative ai clienti: aggiunta, ricerca, lista.
+ */
 public class GestioneClienti extends JFrame {
     private JPanel gestioneClienti;
     private JButton listaClientiButton;
@@ -15,6 +19,11 @@ public class GestioneClienti extends JFrame {
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Gestione clienti.
+     *
+     * @param controllerHome the controller home
+     */
     public GestioneClienti(Controller controllerHome) {
         this.controller = controllerHome;
         setTitle("Gestione Clienti");

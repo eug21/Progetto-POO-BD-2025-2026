@@ -8,6 +8,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
+/**
+ * The type Gestione filiali.
+ * Schermata che consente di gestire le operazioni relative alle filiali: aggiunta, lista, ricerca.
+ */
 public class GestioneFiliali extends JFrame {
     private JButton aggiungiFilialeButton;
     private JPanel gestioneFiliali;
@@ -16,6 +20,11 @@ public class GestioneFiliali extends JFrame {
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Gestione filiali.
+     *
+     * @param controllerHome the controller home
+     */
     public GestioneFiliali(Controller controllerHome) {
         this.controller = controllerHome;
         setTitle("Gestione Filiali");

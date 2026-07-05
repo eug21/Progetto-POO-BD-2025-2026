@@ -8,6 +8,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Rinnovo patente.
+ * Schermata che consente il rinnovo della patente del cliente ossia il cambio numero.
+ */
 public class rinnovoPatente extends JFrame {
     private JPanel rinnovoPatente;
     private JTextField patenteAttualeTextField;
@@ -15,10 +19,15 @@ public class rinnovoPatente extends JFrame {
     private JButton confermaButton;
     private JButton annullaButton;
 
-    private Controller controller; 
+    private Controller controller;
 
 
-
+    /**
+     * Instantiates a new Rinnovo patente.
+     *
+     * @param vecchiaPatente the vecchia patente
+     * @param controllerHome the controller home
+     */
     public rinnovoPatente(String vecchiaPatente, Controller controllerHome){
         this.controller = controllerHome;
         setTitle("PROCEDURA RINNOVO PATENTE");

@@ -10,6 +10,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+/**
+ * The type Lista meccanici.
+ * Schermata ceh visualizza la lista dei meccanici presenti nel sistema  con possibilità di eliminazione previa selezione.
+ */
 public class ListaMeccanici extends JFrame{
     private JButton aggiornaListaButton;
     private JPanel lista;
@@ -17,8 +21,13 @@ public class ListaMeccanici extends JFrame{
     private JTable tab;
     private JButton eliminaSelezionatoButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Lista meccanici.
+     *
+     * @param controllerHome the controller home
+     */
     public ListaMeccanici(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Lista meccanici");

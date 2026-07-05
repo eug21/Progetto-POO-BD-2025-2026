@@ -12,6 +12,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+/**
+ * The type Cerca per filiale.
+ * Schermata che consente di cercare i contratti di una filiale a partire dal suo codice identificativo, è possibile inoltre
+ * chiudere un contratto mediante apposito pulsante. Vengono mostrati sia i contratti attivi che non attivi.
+ */
 public class CercaPerFiliale extends JFrame{
     private JPanel cercaPerFiliale;
     private JTextField codiceFilialeTextField;
@@ -24,6 +29,11 @@ public class CercaPerFiliale extends JFrame{
 
     private List <Contratto> contratti;
 
+    /**
+     * Instantiates a new Cerca per filiale.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaPerFiliale(Controller controllerHome) {
         this.controller = controllerHome;
 

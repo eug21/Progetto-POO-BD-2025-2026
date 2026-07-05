@@ -14,6 +14,10 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
+/**
+ * The type Cerca riparazione.
+ * Schermata che consente di cercare una riparazione mediante la targa del veicolo e la data di effettuazione di tale riparazione.
+ */
 public class CercaRiparazione extends JFrame{
     private JPanel cerca;
     private JTextField dataTextField;
@@ -27,6 +31,11 @@ public class CercaRiparazione extends JFrame{
     private final DateTimeFormatter formatoDataItalia = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
 
+    /**
+     * Instantiates a new Cerca riparazione.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaRiparazione(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Cerca una riparazione");

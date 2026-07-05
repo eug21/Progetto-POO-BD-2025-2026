@@ -8,6 +8,11 @@ import model.Cliente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Cerca cliente.
+ * Schermata che consente di cercare un cliente mediante numero di patente e di eventualmente modificare tale numero
+ * in caso di rinnovo patente.
+ */
 public class CercaCliente extends  JFrame{
     private JPanel cercaCliente;
     private JTextField numeroPatenteTesto;
@@ -19,6 +24,12 @@ public class CercaCliente extends  JFrame{
     private JButton rinnovoPatenteButton;
 
     private Controller controller;
+
+    /**
+     * Instantiates a new Cerca cliente.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaCliente(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Cerca Cliente");

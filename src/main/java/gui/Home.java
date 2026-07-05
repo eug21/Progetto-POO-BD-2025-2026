@@ -6,6 +6,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Home.
+ * Schermata home dove è possibile scegliere le varie operazioni da svolgere.
+ */
 public class Home {
     private JPanel Home;
     private JLabel titolo;
@@ -18,6 +22,9 @@ public class Home {
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Home.
+     */
     public Home() {
         controller = new Controller();
         GESTIONECLIENTIButton.addActionListener(new ActionListener() {
@@ -66,6 +73,11 @@ public class Home {
         });
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         JFrame frame = new JFrame("Home");
         frame.setContentPane(new Home().Home);

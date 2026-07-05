@@ -8,6 +8,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Cerca meccanico.
+ * Schermata che consente di cercare un meccanico mediante codice identificativo e di modificarne lo stato.
+ */
 public class CercaMeccanico  extends JFrame{
     private JTextField idTextField;
     private JTextField nomeTextField;
@@ -16,8 +20,13 @@ public class CercaMeccanico  extends JFrame{
     private JPanel cerca;
     private JButton aggiornaStatoButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Cerca meccanico.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaMeccanico(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Cerca un meccanico");

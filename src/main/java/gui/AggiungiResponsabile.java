@@ -8,6 +8,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Aggiungi responsabile.
+ * Schermata che consente di aggiungere un responsabile nel sistema.
+ */
 public class AggiungiResponsabile extends JFrame{
     private JPanel aggiungiResponsabile;
     private JButton aggiungiButton;
@@ -16,8 +20,13 @@ public class AggiungiResponsabile extends JFrame{
     private JTextField testoCognomeTextField;
     private JTextField testoMailTextField;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Aggiungi responsabile.
+     *
+     * @param controllerHome the controller home
+     */
     public AggiungiResponsabile(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Aggiungi un nuovo responsabile");

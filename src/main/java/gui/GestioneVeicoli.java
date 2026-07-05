@@ -6,14 +6,23 @@ import controller.Controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Gestione veicoli.
+ * Schermata che consente di gestire le operazioni relative ai veicoli: aggiunta, lista, ricerca.
+ */
 public class GestioneVeicoli extends JFrame {
     private JPanel gestioneVeicoli;
     private JButton aggiungiVeicoloButton;
     private JButton cercaVeicoloButton;
     private JButton listaVeicoliButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Gestione veicoli.
+     *
+     * @param controllerHome the controller home
+     */
     public GestioneVeicoli(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Gestione Veicoli");

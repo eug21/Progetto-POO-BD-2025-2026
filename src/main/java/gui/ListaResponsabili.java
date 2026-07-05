@@ -12,6 +12,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+/**
+ * The type Lista responsabili.
+ * Schermata che visualizza la lista dei responsabili presenti nel sistema con possibilità di eliminazione previa selezione.
+ */
 public class ListaResponsabili extends JFrame {
     private JPanel listaResponsabili;
     private JButton aggiornaListaButton;
@@ -19,8 +23,13 @@ public class ListaResponsabili extends JFrame {
     private JTable table1;
     private JButton sollevaDaIncaricoButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Lista responsabili.
+     *
+     * @param controllerHome the controller home
+     */
     public ListaResponsabili(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Lista responsabili");

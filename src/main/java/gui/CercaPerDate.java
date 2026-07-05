@@ -14,6 +14,11 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+/**
+ * The type Cerca per date.
+ * Schermata che consente di cercare i contratti per un periodo compreso tra due date. I contratti possono essere
+ * sia attivi che non attivi, è concessa la chiusura mediante apposito pulsante.
+ */
 public class CercaPerDate extends JFrame{
     private JPanel cercaPerDate;
     private JButton cerca;
@@ -28,6 +33,11 @@ public class CercaPerDate extends JFrame{
     private List <Contratto> contratti;
 
 
+    /**
+     * Instantiates a new Cerca per date.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaPerDate(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Cerca contratti per date");

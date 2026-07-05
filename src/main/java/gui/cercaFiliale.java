@@ -10,6 +10,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
+/**
+ * The type Cerca filiale.
+ * Schermata che consente di cercare una filiale mediante il suo codice identificativo e eventualmente modificarne i campi.
+ */
 public class cercaFiliale extends JFrame{
     private JPanel cercaFiliale;
     private JTextField testoCodiceTextField;
@@ -22,6 +26,11 @@ public class cercaFiliale extends JFrame{
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Cerca filiale.
+     *
+     * @param controllerHome the controller home
+     */
     public cercaFiliale(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Cerca Filiale");

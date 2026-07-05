@@ -7,6 +7,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Aggiungi cliente.
+ * Schermata che consente l'aggiunta di un cliente nel sistema compilando i campi.
+ */
 public class AggiungiCliente extends JFrame{
     private JPanel aggiungiCliente;
     private JComboBox tipoCombo;
@@ -18,6 +22,11 @@ public class AggiungiCliente extends JFrame{
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Aggiungi cliente.
+     *
+     * @param controllerHome the controller home
+     */
     public AggiungiCliente(Controller controllerHome) {
         setTitle("Aggiungi Clienti");
         setContentPane(aggiungiCliente);

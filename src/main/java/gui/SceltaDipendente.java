@@ -6,14 +6,23 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Scelta dipendente.
+ * Schermata che consente di selezionare quale categoria di dipendenti visualizzare: meccanico, responsabile.
+ */
 public class SceltaDipendente extends JFrame{
     private JPanel sceltaDipendente;
     private JButton responsabileButton;
     private JButton meccanicoButton;
 
-    private Controller controller; 
+    private Controller controller;
 
 
+    /**
+     * Instantiates a new Scelta dipendente.
+     *
+     * @param controllerHome the controller home
+     */
     public SceltaDipendente(Controller controllerHome) {
         this.controller = controllerHome;
 

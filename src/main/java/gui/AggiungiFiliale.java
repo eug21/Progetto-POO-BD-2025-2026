@@ -7,6 +7,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Aggiungi filiale.
+ * Schermata che consente di aggiungere una filiale nel sistema.
+ */
 public class AggiungiFiliale extends JFrame{
     private JPanel aggiungiFiliale;
     private JTextField testoCodice;
@@ -18,6 +22,11 @@ public class AggiungiFiliale extends JFrame{
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Aggiungi filiale.
+     *
+     * @param controllerHome the controller home
+     */
     public AggiungiFiliale(Controller controllerHome) {
         this.controller = controllerHome;
         setTitle("Aggiunta filiale");

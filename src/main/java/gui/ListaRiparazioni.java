@@ -14,6 +14,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+/**
+ * The type Lista riparazioni.
+ * Schermata che visualizza la lista delle riparazioni presenti nel sistema con possibilità di terminazione previa selezione.
+ */
 public class ListaRiparazioni extends JFrame {
     private JPanel lista;
     private JButton aggiornaListaButton;
@@ -24,6 +28,11 @@ public class ListaRiparazioni extends JFrame {
     private Controller controller;
     private List <Riparazione> riparazioni;
 
+    /**
+     * Instantiates a new Lista riparazioni.
+     *
+     * @param controllerHome the controller home
+     */
     public ListaRiparazioni(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Lista riparazioni");

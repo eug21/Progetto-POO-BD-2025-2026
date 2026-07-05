@@ -12,6 +12,10 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Lista veicolo.
+ * Schermata che visualizza la lista dei veicoli presenti nel sistema con possibilità di selezione in base allo stato.
+ */
 public class ListaVeicolo extends JFrame {
     private JPanel listaVeicolo;
     private JButton noleggiatiButton;
@@ -21,8 +25,13 @@ public class ListaVeicolo extends JFrame {
     private JTable tabellaVeicoli;
     private JButton eliminaSelezionatoButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Lista veicolo.
+     *
+     * @param controllerHome the controller home
+     */
     public ListaVeicolo(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Lista veicoli");

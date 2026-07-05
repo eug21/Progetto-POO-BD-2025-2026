@@ -18,6 +18,11 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 
+/**
+ * The type Aggiungi contratto.
+ * Schermata che consente di aggiungere un contratto nel sistema. Consente inoltre di cercare il cliente mediante numero di patente
+ * e di cercare il veicolo mediante numero di targa, di calcolare il prezzo del contratto.
+ */
 public class AggiungiContratto extends JFrame {
     private JPanel aggiungiContratto;
     private JTextField testoPatenteTextField;
@@ -40,6 +45,11 @@ public class AggiungiContratto extends JFrame {
     private Veicolo veicoloTrovato = null;
     private final DateTimeFormatter formatoDataItalia = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+    /**
+     * Instantiates a new Aggiungi contratto.
+     *
+     * @param controllerHome the controller home
+     */
     public AggiungiContratto(Controller controllerHome) {
         this.controller = controllerHome;
         setTitle("Aggiungi Contratto");

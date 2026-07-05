@@ -10,6 +10,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+/**
+ * The type Lista clienti.
+ * Schermata che visualizza la lista dei clienti registrati nel sistema.
+ */
 public class ListaClienti extends JFrame {
     private JPanel listaClienti;
     private JButton aggiornaListaButton;
@@ -17,6 +21,11 @@ public class ListaClienti extends JFrame {
 
     private Controller controller;
 
+    /**
+     * Instantiates a new Lista clienti.
+     *
+     * @param controllerHome the controller home
+     */
     public ListaClienti(Controller controllerHome) {
         this.controller = controllerHome;
         setTitle("Lista dei clienti");

@@ -11,6 +11,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.math.BigDecimal;
 
+/**
+ * The type Aggiunta veicolo.
+ * Schermata che consente di aggiungere un veicolo nel sistema scegliendone il tipo (auto, moto, furgone) e sbloccando cosi
+ * i rispettivi attributi specifici della tipologia (numero di porte, capacità di carico, cilindrata).
+ */
 public class AggiuntaVeicolo extends JFrame {
     private JPanel aggiuntaVeicolo;
     private JTextField targaTesto;
@@ -23,8 +28,13 @@ public class AggiuntaVeicolo extends JFrame {
     private JButton aggiungiButton;
     private JComboBox tipoCombo;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Aggiunta veicolo.
+     *
+     * @param controllerHome the controller home
+     */
     public AggiuntaVeicolo(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Aggiungi Veicolo");

@@ -9,6 +9,11 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Assegna res filiale.
+ * Schermata che consente di assegnare un responsabile a una filiale mediante il codice di quest'ultima e il codice del
+ * responsabile.
+ */
 public class AssegnaResFiliale  extends JFrame {
     private JTextField testoFilialeTextField;
     private JTextField testoIdTextField;
@@ -16,7 +21,13 @@ public class AssegnaResFiliale  extends JFrame {
     private JPanel assegna;
 
 
-    private Controller controller; 
+    private Controller controller;
+
+    /**
+     * Instantiates a new Assegna res filiale.
+     *
+     * @param controllerHome the controller home
+     */
     public AssegnaResFiliale(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Assegna un responsabile a una filiale");

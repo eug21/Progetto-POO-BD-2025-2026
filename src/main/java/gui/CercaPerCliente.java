@@ -12,6 +12,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+/**
+ * The type Cerca per cliente.
+ * Schermata che consente di cercare i contratti di un cliente a partire dal numero di patente. La visualizzazione
+ * costituisce sia uno storico che una visione dei contratti attivi.
+ * Un contratto può essere terminato mediante apposito pulsante.
+ */
 public class CercaPerCliente extends JFrame {
     private JPanel cercaPerCliente;
     private JTextField numeroPatenteTextField;
@@ -24,6 +30,11 @@ public class CercaPerCliente extends JFrame {
 
     private List <Contratto> contrattiDelCliente;
 
+    /**
+     * Instantiates a new Cerca per cliente.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaPerCliente(Controller controllerHome) {
         this.controller = controllerHome;
         setTitle("Ricerca contratti per cliente");

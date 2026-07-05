@@ -9,6 +9,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Cerca veicolo.
+ * Schermata che consente di cercare un veicolo mediante il numero di targa e di eventualmente modificarne lo stato.
+ */
 public class CercaVeicolo extends JFrame {
     private JPanel cercaVeicolo;
     private JTextField testoTargaTextField;
@@ -19,8 +23,13 @@ public class CercaVeicolo extends JFrame {
     private JButton cercaButton;
     private JButton aggiornaStatoButton;
 
-    private Controller controller; 
+    private Controller controller;
 
+    /**
+     * Instantiates a new Cerca veicolo.
+     *
+     * @param controllerHome the controller home
+     */
     public CercaVeicolo(Controller controllerHome){
         this.controller = controllerHome;
         setTitle("Cerca un veicolo");
