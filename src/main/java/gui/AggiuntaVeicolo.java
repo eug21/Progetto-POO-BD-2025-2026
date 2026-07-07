@@ -67,7 +67,7 @@ public class AggiuntaVeicolo extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String targa = targaTesto.getText().trim().toUpperCase();
-                if(!targa.matches("^[A-Z]{2}[0-9]{3}[A-Z]{2}$") || !targa.matches("[A-Z]{2}[0-9]{5}$")){
+                if(!targa.matches("^[A-Z]{2}[0-9]{3}[A-Z]{2}$") && !targa.matches("^[A-Z]{2}[0-9]{5}$")){
                     JOptionPane.showMessageDialog(null, "Formato targa non valido, rispettare quello Europeo.","Attenzione", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
